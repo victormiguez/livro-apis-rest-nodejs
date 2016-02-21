@@ -1,5 +1,5 @@
 # Construindo APIs REST com Node.js
-Pretendo com esse repositório colocar os exercícios desenvolvidos e progreso de leitura do livro [Construindo APIs REST com Node.js](https://www.casadocodigo.com.br/products/livro-apis-nodejs).
+Pretendo com esse repositório colocar os exercícios desenvolvidos e progresso de leitura do livro [Construindo APIs REST com Node.js](https://www.casadocodigo.com.br/products/livro-apis-nodejs).
 
 #### Objetivos:
 Status                    | Capítulo
