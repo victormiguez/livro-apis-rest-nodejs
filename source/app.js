@@ -8,7 +8,8 @@ const app = express();
 consign({
   cwd: process.cwd() + '\\build\\'
 })
-  .include('models')
+  .include('database.js')
+  .then('models')
   .then('libs/middlewares.js')
   .then('routes')
   .then('libs/boot.js')
