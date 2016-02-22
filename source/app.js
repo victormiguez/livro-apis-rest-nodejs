@@ -1,11 +1,15 @@
 'use strict';
 import express from 'express';
+import consign from 'consign';
 
-const PORT = 3000;
 const app = express();
 
-app.get('/', (req, res) => {
-  res.json({status: 'NTask API'});
-});
 
-app.listen(PORT, () => console.log(`NTask API - porta ${PORT}`));
+consign({
+  cwd: process.cwd() + '\\build\\'
+})
+  .include('models')
+  .then('libs/middlewares.js')
+  .then('routes')
+  .then('libs/boot.js')
+  .into(app);

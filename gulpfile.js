@@ -21,7 +21,7 @@ gulp.task('babel', function () {
 
 gulp.task('build', ['babel']);
 
-gulp.task('watch', function() {
+gulp.task('watch', ['build'], function() {
   gulp.watch(paths.source, ['babel']);
 });
 
